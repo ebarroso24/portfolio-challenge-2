@@ -23,10 +23,21 @@
     /* use CSS var() function to reference a variable created above */
     background-color: var(--dark);
     color: var(--light);
+
+    
     
     
   }
-
+.contact{
+    justify-content: space-between;
+    margin: 20px;
+}
+a{
+    
+    justify-content: space-between;
+    padding: 50px;
+   
+}
 
   h1 {
     font-size: 200%;
@@ -95,13 +106,34 @@
   }
 
 
-#contact-me{
-  color: var(--dark);
-}
 
   h2{
     font-size: 300%;
     color: var(--content-text);
   } 
+
+
+P{
+ display: inline-block;
+ width: 600px;  
+ height:20px;
+ padding: 0px;
+   
+}  
+  @media screen and (max-width: 768px) {
+    header,
+    main {
+      flex-direction: column;
+    }
+  
+    section {
+      padding-right: 0;
+    }
+  
+    aside {
+      width: 100%;
+      text-align: center;
+    }
+  }
   
   
