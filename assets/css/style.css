@@ -1,8 +1,10 @@
 :root {
     /* declare a variable with `--` syntax */
-    --dark: navy;
-    --light: #c1d4f9;
-    --navlink-color: #4550e9;
+    --dark: rgb(86, 150, 213);
+    --light: #f0f1f5;
+    --header-text: #f6f6f6;
+    --content-text: grey;
+
   }
   
   body {
@@ -24,24 +26,25 @@
     
     
   }
-  
 
 
   h1 {
     font-size: 200%;
-    color: var(--navlink-color);
+    color: var(--header-text);
+
+
    
     
   }
   .topnav {
-    background-color: #333;
+    background-color: #e4e7f0;
     overflow: hidden;
   }
   
   /* Style the links inside the navigation bar */
   .topnav a {
     float: left;
-    color: #f2f2f2;
+    color: #405dc7;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -57,16 +60,19 @@
   /* Add a color to the active/current link */
   .topnav a.active {
     background-color: #04AA6D;
-    color: white;
+    color: rgb(205, 98, 98);
   }
   
   button {
+    
     width: 250px;
     margin: 0 .5%;
     font-size: 120%;
     color: #13293d;
     background-color: #fff;
-    border: 3px solid #13293d;
+    border: 8px solid #1c65a9;
+
+
   }
   
   /* The user's cursor is positioned over the element */
@@ -79,6 +85,7 @@
   button:active {
     font-size: 150%;
     box-shadow: 0 0 10px #000 inset;
+    
   }
   
   /* The element is currently in focus, either by tabbing to or clicking on it */
@@ -86,4 +93,15 @@
     outline: none;
     border-color: #8ac4ff;
   }
+
+
+#contact-me{
+  color: var(--dark);
+}
+
+  h2{
+    font-size: 300%;
+    color: var(--content-text);
+  } 
+  
   
